@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&family=Grape+Nuts&family=Roboto:wght@100;300;400;700;900&display=swap");
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;  
+    
+}
+
+.nav_bar_cont{
+    height:7rem;
+    
+    background-color: rgb(104,87,98);
+    display: flex;
+    gap:6rem;
+}
+.nav_bar_cont > *{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+}
+
+.col_filt_cont{
+    height: 4rem;
+    width: 20rem;
+    background-color: dimgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.only_box{
+    border-radius: 5px;
+    height:2rem;
+    width:3rem;
+}
+.only_box:hover{
+    background-color: rgb(155,153,135) ;
+}
+.lightblue {
+    background-color: lightblue;
+}
+.lightgreen {
+    background-color: lightgreen;
+}
+.lightpink {
+    background-color: lightpink;
+}
+.black {
+    background-color: black;
+}
+.action_btn_cont{
+    height: 4rem;
+    width: 7rem;
+    background-color: dimgrey;
+    display: flex;
+    color:white;
+    
+}
+.action_btn_cont > *{
+    font-size: 2.5rem;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_btn:hover{
+    background-color: green;
+}
+
+.rmv_btn:hover{
+    background-color: greenyellow;
+}
+
+p { 
+    font-size: 2rem;
+    color:white;
+    /* padding-top: 1rem; */
+    /* border: 1px solid black; */
+}
+
+.ticket_det_cont{
+    position: absolute;
+    top:40%;
+    left:7%;
+    height:40vh;
+    width:30vw;
+    background-color: coral;
+    display: none;
+}
+.textare_cont{
+    background-color: lightgray;
+    height: 100%;
+    width:75%;
+    border:none;
+    outline: none;
+    font-size: 20px; 
+    resize: none;
+}
+.ticket_cat_selection{
+    width:25%;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.main_cont{
+    /* padding:2rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.ticket_cont{
+    height: 12rem;
+    width:15rem;
+    background-color: coral;
+    margin: 2rem;       
+  
+}
+.ticcont_id {
+    height:1rem;
+    width:15rem;
+    /* background-color: coral; */
+}
+
+.tickcont_title{
+    height:2rem;
+    width:15rem;
+    background-color: yellow;
+}
+
+.ticcont_desc{
+    height:7rem;
+    width:15rem;
+    background-color: coral;
+}
+
+.ticket_lock {
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+.cat_picker{
+    border-radius: 5px;
+    height:2rem;
+    width:3rem;
+}
+.highlight {
+    border: 2px solid dimgray;
+}

@@ -25,6 +25,7 @@ addBtn.addEventListener('click', event =>{
     
     if (tickDisplay){
         toDisplayTicket.style.display="flex";
+        window.alert("Press Shift after entering text");
     } else{
         toDisplayTicket.style.display="none";
     }
@@ -54,6 +55,7 @@ ticket_text_cont.addEventListener("keydown", event =>{
     
     if (keyPressed === 'Shift') {
         // event.preventDefault();
+        
         const tick_to_be_created_desc = text_area_cont.value;
         const tick_to_be_created_id = Date.now();
         createTicket(tick_to_be_created_color, tick_to_be_created_desc,tick_to_be_created_id);
@@ -119,7 +121,7 @@ const handleDeleteTicket = ticket =>{
         if (rmv_tick_flag) {
             debugger
             const cur_tick_id = ticket.children[1].innerText;
-            window.alert(cur_tick_id);
+            window.alert(`Deleting ${cur_tick_id}`);
 
             const index_of_ticket = arrTickets.findIndex(t =>{
                 return t.id == cur_tick_id

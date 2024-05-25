@@ -24,7 +24,7 @@ body{
 
 .col_filt_cont{
     height: 4rem;
-    width: 20rem;
+    width: 25rem;
     background-color: dimgrey;
     display: flex;
     justify-content: space-around;
@@ -33,7 +33,12 @@ body{
 .only_box{
     border-radius: 5px;
     height:2rem;
-    width:3rem;
+    width:4rem;
+    color:brown;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: larger;
 }
 .only_box:hover{
     background-color: rgb(155,153,135) ;
@@ -64,8 +69,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
-    align-items: center;
 }
 
 .add_btn:hover{
@@ -77,8 +80,10 @@ body{
 }
 
 p { 
-    font-size: 2rem;
+    font-size: 3rem;
     color:white;
+    text-align: center;
+    line-height: 4rem;
     /* padding-top: 1rem; */
     /* border: 1px solid black; */
 }
@@ -119,13 +124,15 @@ p {
 .ticket_cont{
     height: 12rem;
     width:15rem;
-    background-color: coral;
+    background-color: dimgrey;
     margin: 2rem;       
-  
+    
+    
 }
 .ticcont_id {
     height:1rem;
     width:15rem;
+    
     /* background-color: coral; */
 }
 
@@ -138,7 +145,7 @@ p {
 .ticcont_desc{
     height:7rem;
     width:15rem;
-    background-color: coral;
+    background-color: dimgrey;
 }
 
 .ticket_lock {
@@ -154,4 +161,53 @@ p {
 }
 .highlight {
     border: 2px solid dimgray;
+}
+
+@media only screen and (max-width: 420px) {
+    .nav_bar_cont{
+        height: 9rem;
+        gap:3rem;
+    }   
+    .col_filt_cont{
+        height: 6rem;
+        width: 50rem;
+        display:flex;
+        flex-wrap: wrap;
+        
+    }
+    .only_box{
+        border-radius: 5px;
+        height:2rem;
+        width:2rem;
+        line-height: 2rem;
+        font-weight: 500;
+        font-size: x-small;
+    }
+
+    .action_btn_cont{
+        height: 6rem;
+        width: 30rem;
+        background-color: dimgrey;
+        display: flex;
+        flex-direction: column;
+        color:white;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .action_btn_cont > *{
+        font-size: 1.5rem;
+        height:50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p { 
+        font-size: 1rem;    
+        color:white;
+        text-align: center;
+        line-height: 2rem;
+        margin-right: 2rem;
+    }
 }
